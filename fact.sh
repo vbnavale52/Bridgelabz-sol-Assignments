@@ -10,3 +10,12 @@ do
         ans=`expr $ans \* $counter`
 done
 echo "factorial of the given no  is $ans"
+
+
+#Output
+Rohit@DESKTOP-3TGP0OF MINGW64 ~/vinod (Demo)
+$ ./fact.sh
+Enter the no to find the factorial of no:
+5
+factorial of the given no  is 120
+
