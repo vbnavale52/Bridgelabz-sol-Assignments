@@ -4,15 +4,15 @@ array=(2 -1 -1 2 -1)
 
 echo ${array[@]}
 
-for(( index=0; index<5; index++ ))
+for(( i=0; i<5; i++ ))
 do
-   for(( indexOne=index+1; indexOne<5; indexOne++ ))
+   for(( j=i+1; j<5; j++ ))
    do
-      for(( indexTwo=indexOne+1; indexTwo<5; indexTwo++ ))
+      for(( k=j+1; j<5; j++ ))
       do
-         if [ $(($((array[index]))+$((array[indexOne]))+$((array[indexTwo])))) -eq 0 ]
+         if [ $(($((array[i]))+$((array[j]))+$((array[k])))) -eq 0 ]
          then
-            echo "${array[index]} ${array[indexOne]} ${array[indexTwo]}"
+            echo "${array[i]} ${array[j]} ${array[k]}"
          fi 
       done
    done
