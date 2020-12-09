@@ -1,5 +1,3 @@
-/* 4.	 Write a program to find minimum of three numbers using nested if-else.
-                  Also try same program using ternary operator also. */
 package assignment;
 
 import java.util.Scanner;
